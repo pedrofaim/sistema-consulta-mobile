@@ -75,6 +75,18 @@ export default function Home({ navigation }: any) {
         <Text style={styles.logoutText}>🚪 Sair da Conta</Text>
       </TouchableOpacity>
 
+        <TouchableOpacity
+          style={[styles.menuItem, { backgroundColor: "#C62828" }]}
+          onPress={() => navigation.navigate("PressaoArterial")}
+        >
+          <Text style={styles.menuIcone}>🩺</Text>
+          <Text style={styles.menuTitulo}>Pressão Arterial</Text>
+          <Text style={styles.menuDescricao}>
+            Aferir PA e acionar emergência cardiológica se grave
+          </Text>
+        </TouchableOpacity>
+
+
       <View style={styles.footer}>
         <Text style={styles.footerText}>Sistema de Consultas Médicas</Text>
       </View>
